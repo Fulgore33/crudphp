@@ -1,9 +1,9 @@
 <?php 
 require ("models/conexion.php");
 
-$con = new conexion();
+$objConexion = new conexion();
 
-$usuario = $con -> consultar("SELECT * FROM usuarios");
+$usuario = $objConexion -> consultar("SELECT * FROM usuarios");
 
 require ("views/verUsuario.php");
 ?>
